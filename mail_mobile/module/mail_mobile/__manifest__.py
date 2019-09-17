@@ -13,7 +13,19 @@
     'depends': [
         'mail',
     ],
-    'data': ['views/extend.xml'],
+    'data': [
+        # SECURITY
+        'security/ir.model.access.csv',
+
+        # DATA
+        'views/data/mail_mobile_data_view.xml',
+
+        # EXTEND
+        'views/extend.xml',
+
+        # MENU
+        'views/menu.xml'
+    ],
     'installable': True,
     'auto_install': False,
     'application': False,

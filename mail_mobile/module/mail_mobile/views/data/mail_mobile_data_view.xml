@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+
+        <!-- mail.mobile.data form view -->
+        <record id="mail_mobile_data_view_form" model="ir.ui.view">
+            <field name="name">mail.mobile.data.view.form</field>
+            <field name="model">mail.mobile.data</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- Add your fields here -->
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- mail.mobile.data tree view -->
+        <record id="mail_mobile_data_view_tree" model="ir.ui.view">
+            <field name="name">mail.mobile.data.view.tree</field>
+            <field name="model">mail.mobile.data</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- Add your fields here -->
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- mail.mobile.data action window -->
+        <record id="mail_mobile_data_action" model="ir.actions.act_window">
+            <field name="name">Mail Mobile Devices</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mail.mobile.data</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                    Oops, Data not found.
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                    Click create button to create a new data.
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+mail_developer_mobile_data,LSM Developer Mobile Data,mail_mobile.model_mail_mobile_data,base.group_no_one,TRUE,TRUE,TRUE,TRUE
