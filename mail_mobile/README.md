@@ -1,3 +1,5 @@
+## [Deprecated] will move to allow_fullscreen and push_notification (coming soon), and this module will remove as soon as possible.
+
 # Mail Mobile
 
 Discuss module in Odoo is a great feature, you can chat to chat in realtime. If you run in browser dekstop, it will notice if someone receive message. But if you run in Android or Iphone, you will struggle to know notice if you found a new message. So i create this module to resolve that issues. If you get message, it will show native notification to Android or Iphone. [In this case, im tested in Android only. I dont have Iphone :D]
