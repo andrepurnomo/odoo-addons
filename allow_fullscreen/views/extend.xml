@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+        <template id="layout" name="PWA Support" inherit_id="web.layout">
+            <xpath expr="//meta[@name='viewport']" position="after">
+                <!-- Add title for splash screen -->
+                <title t-esc="title or 'Odoo'"/>
+                <!-- CHange this for theme color you want -->
+                <meta name="theme-color" content="#ffffff"/>
+                <!-- This meta will allow fullscreen web from mobile -->
+                <meta name="apple-mobile-web-app-capable" content="yes"/>
+                <meta name="mobile-web-app-capable" content="yes"/>
+                <!-- Add icon to home screen -->
+                <link rel="shortcut icon" href="/web/binary/company_logo"/>
+                <link rel="apple-touch-icon" href="/web/binary/company_logo"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
